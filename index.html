@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Invitation Hacimi & Hacima</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="s.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  
+  <!-- Home Start -->
+  <section id="home" class="home">
+    <div class="bg-full">
+      <div class="container">
+      <div class="row justify-content-center aos-init aos-animate " data-aos="fade-up" data-aos-duration="3000">
+        <h1 class="textAtas text-center mt-5" style="font-size: 4.7em; color: #c2b502;">Hacimi & Hacima</h1>
+        <h4 class="textTengah text-center text-light mt-lg-2 mt-5">Kepada yth. <br> Bapak/Ibu/Saudara/i,</h4>
+        <h2 class="text-center" style="font-weight: bold; color: #c2b502; font-family:  serif;"></h2>
+        <p class="textTengah text-center text-white">Mohon maaf bila ada kesalahan <br>pada penulisan nama/gelar.</p>
+        <div class="kotak bg-black col-lg-4 col-md-6 col-10 text-center  py-lg-4 py-md-4 py-3 rounded-4 mt-lg-2 mt-5">
+          <h4 class="text-light pb-3">Hitungan Mundur</h4>       
+          <div class="d-inline-block ms-2">
+            <div class="text-light bg-secondary p-3 rounded-2 fs-4" id="days">00</div>
+            <div class="time-label text-light">Hari</div>
+          </div>
+
+          <div class="d-inline-block ms-2">
+            <div class="text-light bg-secondary p-3 rounded-2 fs-4" id="hours">00</div>
+            <div class="time-label text-light">Jam</div>
+          </div>
+
+          <div class="d-inline-block ms-2">
+            <div class="text-light bg-secondary p-3 rounded-2 fs-4" id="minutes">00</div>
+            <div class="time-label text-light">Menit</div>
+          </div>
+
+          <div class="d-inline-block ms-2">
+            <div class="text-light bg-secondary p-3 rounded-2 fs-4" id="seconds">00</div>
+            <div class="time-label text-light">Detik</div>
+          </div>  
+        </div>
+        <div class="text-center mt-3">
+        <a href="#doa" class="btn" onClick="enableScroll()"><img src="img/1000_F_140878889_5q9KGY7b72ATF2uIT8mJ9ISdrxog4Caz-removebg-preview.png" alt="undangan" width="40px">Lihat Undangan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home End -->
+  
+  <div class="tambah" style="background-color: #4B5440;">
+  <br>
+  </div>
+  
+  <!-- SVG Start -->
+  <div class="custom-shape-divider-top-1723900219">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"fill="#4B5440" ></path>
+    </svg>
+  </div>
+  <!-- SVG End -->
+
+  <!-- Doa Start -->
+   <section id="doa" class="doa">
+    <div class="contanier">
+      <div class="row">
+        <div class="arab">
+        </div>
+        <h1 class="arab text-center mt-5" style="font-size: 2.8em;">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h1>
+
+        <p class="arab px-5 mt-5 text-center fs-1">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ
+        بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ٢١
+        </p>
+        <p class="px-5 mt-5 text-center fs-6 ">Dengan Nama Allah Yang Maha Pengasih Lagi Maha Penyanyang.</p>
+        <p class="px-5 mt-1 text-center fs-6 text-capitalize">“Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu merasa nyaman kepadanya, dan dijadikan-Nya di antaramu mawadah dan rahmah. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir”</p>
+      </div>
+    </div>      
+   </section>
+  <!-- Doa End -->
+
+  <!--SVG Start  -->
+  <div class="custom-shape-divider-top-1723900219">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="transform: scaleY(-1);">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill" fill="#4B5440"></path>
+    </svg>
+  </div>
+  <!-- SVG End -->
+
+  <div class="tambah" style="background-color: #4B5440;">
+  <br>
+  </div>
+
+  <!-- Pengantin Start -->
+  <section class="pengantin" id="pengantin" style="background-color: #4B5440;">
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <h3 class="judul" style="font-size: 3em; color: bisque;" >Profil</h3>
+          <h1 class="tentangMempelai" style="font-size: 4em; color: bisque;" >Pasangan Mempelai</h1>
+        </div>
+        <div class="pengatin row content aos-init ms-1 aos-animate justify-content-evenly me-sm-5">
+            <div class="col-sm-5" width="10px">
+              <div class="card text-center mb-4 border-2 rounded-4 mt-4">
+                  <div class="card-header">
+                    <img class="mt-5 mb-2" style="border-radius: 20px;" src="img/wisnu.jpg" width="60%"  alt="">
+                    <p class="tentangMempelai" style="font-size: 2em; color:#4B5440; font-weight: 900; bottom: 0;" >Wisnu Ibnu Muttaqiem</p>
+                    <a style="text-decoration: none;color: black;" href="https://www.instagram.com/wisnuibnuuu?igsh=MXgxam44dGs0bHFkcQ=="><img src="img/ig-removebg-preview.png"width="40px" alt="IGWISNU">@wisnuibnuuu</a>
+                    <p class="px-5">Putra Kedua dari Bapak Nama Bapak & Ibu Nama Ibu</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-5" width="10px">
+              <div class="card text-center mb-4 border-2 rounded-4 mt-4">
+                  <div class="card-header">
+                    <img class="mt-5 mb-2" style="border-radius: 20px;" src="img/wisnu.jpg" width="60%"  alt="">
+                    <p class="tentangMempelai" style="font-size: 2em; color:#4B5440; font-weight: 900; bottom: 0;" >Wisnu Ibnu Muttaqiem</p>
+                    <a style="text-decoration: none;color: black;" href="https://www.instagram.com/wisnu77112?igsh=eDhxZGJ1MTFmc2Vs"><img src="img/ig-removebg-preview.png"width="40px" alt="IGWISNU">@wisnu77112</a>
+                    <p class="px-5">Putra Kedua dari Bapak Nama Bapak & Ibu Nama Ibu</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12" width="10px">
+              <div class="card text-center mb-4 border-2 rounded-5 mt-4 mx-5">
+                  <div class="card-header">
+                    <p class="arab text-center mt-4" style="font-size: 2em;font-weight: 900;" >بَارَكَ اللهُ لَكُماَ وَبَارَكَ عَلَيْكُماَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ </p>
+                    <p class="text-capitalize ms-1 mt-4">"Semoga Allah rekatkan keberkahan padamu (di kala senang), dan semoga Allah rekatkan keberkahan kepada kalian berdua (di kala susah), dan semoga Allah selalu menghimpun kalian berdua dalam kebaikan."</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pengantin End -->
+
+  <div class="tambah" style="background-color: #4B5440;">
+  <br>
+  </div>
+  
+  <!-- SVG Start -->
+  <div class="custom-shape-divider-top-1723900219">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"fill="#4B5440" ></path>
+    </svg>
+  </div>
+  <!-- SVG End -->
+
+  <!-- Wedding Event Start -->
+   <section class="event" id="event">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+              <h1 class="mt-5 fs-1 fw-bold" style=" color: #7b751d;" >THE WEDDING EVENT
+              </h1>
+              <p class="text-capitalize mx-2">Bergabunglah bersama Kami menyaksikan sekaligus merayakan terbentuknya ikatan suci ini. Kami ingin Anda menjadi bagian dari hari istimewa kami.
+              </p>
+            <div class="event row aos-init aos-animate justify-content-center">
+              <div class="col-sm-5 mb-4 col-10" width="10px">
+                <div class="text-center d-flex">
+                  <div class="rounded-start py-5" style="background-color: #7b751d;">
+                    <img class="pt-5" style="width:60px ;" src="img/White_Simple_Wedding_Ring_Instagram_Story-removebg-preview.png">
+                      <p class="pt-2 miring px-3" style="font-size: 16px;" >
+                        PROSESI<br>RESESPSI 
+                      </p>
+                  </div>
+                  <div class="ubah rounded-end py-4 px-lg-3 pe-2 ps-2" style="background-color:bisque;text-align: justify;" >
+                    <div class="d-flex">
+                      <h1 class="ps-2" style="font-size: 4em; font-weight: bold;">01</h1>
+                      <p class="pt-2 px-2 fw-bold fs-5">Sabtu<br>Januari 2024</p>
+                    </div>
+                    <div class="d-flex">
+                      <h4 class="fw-bold"><img src="img/jam.png" width="50px" alt="">08.00 - 10.00 WIB</h4>
+                    </div>          
+                    <div class="d-flex">
+                      <h1> <img src="img/tempat.png" width="50px" alt=""></h1>
+                      <p class="text-start pt-3" >WEST POINT HOTEL BANDUNG
+                      </p>
+                    </div>
+                    <p class="kecil ps-lg-5 ps-3 ">Jl. LMU.Nurtanio No.63, Dungus Cariang, Kec. Andir, Kota Bandung.</p>
+                    <div class="d-flex flex-row-reverse mb-3">
+                      <a href="https://maps.app.goo.gl/si26tazWgryPRBzw8" class="btn btn-outline-success"><img src="img/tempat.png" width="30px" alt="">Lihat Lokasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-5 mb-4 col-10" width="10px">
+                <div class="text-center d-flex">
+                  <div class="rounded-start py-5" style="background-color: #7b751d;">
+                    <img class="pt-5" style="width:60px ;" src="img/pernikahan.png">
+                      <p class="pt-2 miring px-3" style="font-size: 16px;">
+                        AKAD<br> NIKAH  
+                      </p>
+                  </div>
+                  <div class="ubah rounded-end py-4 px-lg-3 pe-2 ps-2" style="background-color:bisque;text-align: justify;" >
+                    <div class="d-flex">
+                      <h1 class="ps-2" style="font-size: 4em; font-weight: bold;">01</h1>
+                      <p class="pt-2 px-2 fw-bold fs-5">Sabtu<br>Januari 2024</p>
+                    </div>
+                    <div class="d-flex">
+                      <h4 class="fw-bold"><img src="img/jam.png" width="50px" alt="">08.00 - 10.00 WIB</h4>
+                    </div>          
+                    <div class="d-flex">
+                      <h1> <img src="img/tempat.png" width="50px" alt=""></h1>
+                      <p class="text-start pt-3" >WEST POINT HOTEL BANDUNG
+                      </p>
+                    </div>
+                    <p class="kecil ps-lg-5 ps-3 ">Jl. LMU.Nurtanio No.63, Dungus Cariang, Kec. Andir, Kota Bandung.</p>
+                    <div class="d-flex flex-row-reverse mb-3">
+                      <a href="https://maps.app.goo.gl/si26tazWgryPRBzw8" class="btn btn-outline-success"><img src="img/tempat.png" width="30px" alt="">Lihat Lokasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-8 col-12 ">
+                <img  src="img/hp-removebg-preview.png" alt="">
+              </div>
+              <div class="beda col-lg-6 col-12 py-sm-5 justify-content-between" style="display: flex; align-items: center; ">
+                <div class="text-lg-start text-center">
+                  <h3 style="font-family: tahoma; font-weight: bold;">
+                    Instagram Filter
+                  </h3>
+                  <h1 class="teks" style="color:  #7b751d;" >
+                    Capture Your Moment
+                  </h1>
+                  <p class="fs-5" style="font-family: tahoma;">
+                    Abadikan setiap momen bahagia pada acara pernikahan kami  dengan menandai unggahan anda sembari menggunakan Filter Instagram berikut.
+                  </p>
+                  <a class="btn p-2 rounded" style="text-decoration: none; font-size: small;" href="https://api.whatsapp.com/send/?phone=6285893953426"><img class="me-1" width="17px" src="img/download.png" alt="">Download Filter Sekarang</a>
+                </div>
+              </div>
+              <div class="col-lg-10 col-12" width="10px">
+                <div class="card text-center mb-4 border-2 rounded-5 mt-4 mx-5" style="background-color: #4B5440;">
+                  <div class="card-header text-center">
+                    <iframe class="player ratio p-lg-5 p-2 rounded rounded-3" src="https://www.youtube.com/embed/aKtb7Y3qOck?si=0Al0FhdrELf1XBDR&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <div class="d-flex flex-column">
+                        <h1 class="teks" style="color: bisque;">Live Streaming</h1>
+                      <p class="text-capitalize mt-2" style="color: bisque; font-size: small;">Jika anda berhalangan hadir namun tetap ingin menjadi bagian dari hari berbahagia kami, bergabunglah melalui siaran langsung kami.
+                      </p>
+                        <div class="ahmad col-lg-12 pt-1 ps-lg-5">
+                          <a href="#doa" class="btn mb-2"><img src="img/ig-removebg-preview.png" alt="undangan" width="20px"> Instagram</a>
+
+                          <a href="#doa" class="btn mb-2"><img src="img/yt-removebg-preview.png" alt="undangan" width="20px"> YouTube</a>
+                            
+                          <a href="#doa" class="btn mb-2"><img src="img/zoom-removebg-preview.png" alt="undangan" width="20px"> Zoom</a>
+
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+  <!-- Wedding Event End -->
+
+
+  <!--SVG Start  -->
+  <div class="custom-shape-divider-top-1723900219">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="transform: scaleY(-1);">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill" fill="#4B5440"></path>
+      </svg> 
+  </div>
+  <!-- SVG End -->
+
+  <div class="tambah" style="background-color: #4B5440;">
+    <br>
+    </div>
+    
+  <!-- Love Story Start -->
+   <section class="story" style="background-color: #4B5440;">
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <h1 class="mt-5 fs-1 fw-bold" style=" color:bisque;" >OUR LOVE STORY
+          </h1>
+          <p class="text-capitalize mx-2 mt-lg-4" style=" color:bisque;" >Menikah bukan perlombaan, bukan soal cepat atau lambat. Tetapi, siapa yang siap mengemban amanah yang besar.
+          </p>
+          <div class="story row content aos-init ms-1 aos-animate justify-content-center mt-5"> 
+            <div class="col-lg-6 col-12 mb-4 rotated-kiri" style="width: 15rem;">
+              <div class="bg-white px-4 pt-4 pb-5 rounded rounded-4">
+                <img src="img/wisnu.jpg" class="card-img-top rounded rounded-4 " alt="Foto 1">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-4 justify-content-between" style="display: flex; align-items: center; ">
+                <div class="text-lg-start text-center">
+                  <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;color:  blanchedalmond;">
+                    Awal Bertemu
+                  </h1>
+                  <h3 style="color: blanchedalmond;" >
+                    Januari 20XX
+                  </h3>
+                  <p  style="font-family: tahoma; color: white; ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                  </p>
+                </div>
+            </div>         
+            <div class="col-lg-6 col-12 mb-4  justify-content-end order-lg-0 order-2" style="display: flex; align-items: center;">
+              <div class="text-lg-end text-center">
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;color:  blanchedalmond;">
+                  Menjalin Hubungan
+                </h1>
+                <h3 style="color: blanchedalmond;" >
+                  Januari 20XX
+                </h3>
+                <p  style="font-family: tahoma; color: white;">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-4 rotated-kanan" style="width: 15rem;">
+              <div class="bg-white px-4 pt-4 pb-5 rounded rounded-4">
+                <img src="img/wisnu.jpg" class="card-img-top rounded rounded-4 " alt="Foto 1">
+              </div>
+            </div>
+          </div>
+          <div class="story row content aos-init ms-1 aos-animate justify-content-center mb-5"> 
+            <div class="col-lg-6 col-12 mb-4 rotated-kiri" style="width: 15rem;">
+              <div class="bg-white px-4 pt-4 pb-5 rounded rounded-4">
+                <img src="img/wisnu.jpg" class="card-img-top rounded rounded-4 " alt="Foto 1">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-4 justify-content-between" style="display: flex; align-items: center; ">
+                <div class="text-lg-start text-center">
+                  <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;color:  blanchedalmond;">
+                    Bertunangan
+                  </h1>
+                  <h3 style="color: blanchedalmond;" >
+                    Januari 20XX
+                  </h3>
+                  <p  style="font-family: tahoma; color: white; ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                  </p>
+                </div>
+            </div>         
+            <div class="col-lg-6 col-12 mb-4  justify-content-end order-lg-0 order-2" style="display: flex; align-items: center;">
+              <div class="text-lg-end text-center">
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;color:  blanchedalmond;">
+                  Hari Pernikahan
+                </h1>
+                <h3 style="color: blanchedalmond;" >
+                  Januari 20XX
+                </h3>
+                <p  style="font-family: tahoma; color: white;">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-4 rotated-kanan" style="width: 15rem;">
+              <div class="bg-white px-4 pt-4 pb-5 rounded rounded-4">
+                <img src="img/wisnu.jpg" class="card-img-top rounded rounded-4 " alt="Foto 1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- Love Story End -->
+  
+  <div class="tambah" style="background-color: #4B5440;">
+   <br>
+  </div>
+    
+    <!-- SVG Start -->
+    <div class="custom-shape-divider-top-1723900219">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"fill="#4B5440" ></path>
+      </svg>
+    </div>
+    <!-- SVG End -->
+
+  <!-- Galery Start -->
+   <section id="galery">
+      <div class="container">
+        <div class="text-center">
+         <h1 class="mt-5 fs-1 fw-bold" style=" color:#4B5440;" >OUR MOMENT</h1>
+         <p class="text-capitalize mx-2 mt-lg-3" style=" color:#4B5440;" >photo video by client hacimi & hacima</p>
+          <div class="gallery min-vh-100" >
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" style="align-items: center;">
+                  <div class="col-lg-4 col-">
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-6">
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6">
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-6" >
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-6" >
+                    <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col-lg-4" >
+                  <img src="img/wisnu.jpg" class="gallery-item" alt="gallery">
+              </div>
+            </div>
+          </div>
+            <div class="card-box">
+              <div class="card-text">
+              </div>
+            </div>
+            <h1 style=" color:#4B5440; font-size:5em;">"</h1>
+            <p class="text-capitalize mx-2 fs-5" style=" color:#4B5440;" >"Pernikahan adalah ibadah, dan setiap ibadah bermuara pada cinta-Nya sebagai tujuan. Sudah sewajarnya setiap upaya meraih cinta-Nya dilakukan dengan sukacita."
+            </p>
+          </div>
+        </div>
+      </div>
+   </section>
+  <!-- Galery End -->
+
+  <!--SVG Start  -->
+  <div class="custom-shape-divider-top-1723900219">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="transform: scaleY(-1);">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill" fill="#4B5440"></path>
+      </svg> 
+  </div>
+  <!-- SVG End -->
+
+  <div class="tambah" style="background-color: #4B5440;">
+  <br>
+  </div>
+
+  <!-- Great Start -->
+   <section class="great" style="background-color: #4B5440;">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h1 class="mt-5 fw-bold" style=" color:bisque; font-size: 4em;" >Greet & Wishes
+            </h1>
+            <p class="text-capitalize mx-2 mt-lg-4" style=" color:bisque;" >Sapa dan kirim ucapan beserta doa yang terbaik untuk mereka yang berbahagia.
+            </p>
+            <div class="great row content aos-init ms-1 aos-animate justify-content-center mt-5"> 
+              <div class="col-lg-8 col-10">
+                <form
+                id="my-form"
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbymXBgCWLpYop8JPSQuoFf4kk9rYbfNavukdQN1nM9qXYPQFt0OGUVR_f2XbHRkTGA4HQ/exec">
+                  <div class="mb-2">
+                    <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama">
+                  </div>             
+                  <div class="mb-2">
+                  <textarea class="form-control" id="ucapan" rows="3" placeholder="Ucapan" name="ucapan"></textarea>
+                  </div>
+                  <div class="d-flex gap-lg-1 gap-1">
+                  <div class="col-lg-10 col-7.5">
+                    <select class="form-select" name="status" aria-label="Default select example">
+                      <option selected disabled>Konfirmasi Kehadiran</option>
+                      <option value="Hadir">Hadir</option>
+                      <option value="Tidak Hadir">Tidak Hadir</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-4">
+                    <select class="form-select" name="jumlah" aria-label="Default select example">
+                      <option selected disabled>Jumlah</option>
+                      <option value="1 Orang">1 Orang</option>
+                      <option value="2 Orang">2 Orang</option>
+                      <option value="3 Orang">3 Orang</option>
+                      <option value="4 Orang">4 Orang</option>
+                      <option value="5 Orang">5 Orang</option>
+                    </select>
+                  </div>
+                  </div>
+                  <button class="btn btn-outline-success mt-3 px-3 fs-5" style="background-color: bisque; padding: 10px; border-radius: 9px">Kirim</button>
+                </form>
+              </div>
+              <p class="text-capitalize mx-2 mt-3" style=" color:bisque;" >Terima kasih yang sebesar-besarnya atas segala doa dan ucapan selamat yang telah disampaikan kepada kami dalam momen pernikahan ini. Semoga doa dan harapan yang terbaik kembali kepada Anda semua dengan berlipat ganda.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+  <!-- Great End -->
+   
+  <div class="tambah" style="background-color: #4B5440;">
+    <br>
+    </div>
+    
+    <!-- SVG Start -->
+    <div class="custom-shape-divider-top-1723900219">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"fill="#4B5440" ></path>
+      </svg>
+    </div>
+    <!-- SVG End -->
+
+    <!-- Gift Start -->
+    <section class="gift">  
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h1 class="mt-5 fs-1 fw-bold" style=" color:#7b751d;" >Wedding Gift
+            </h1>
+            <p class="text-capitalize mx-2 mt-lg-4" style=" color:#7b751d;" >Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara digital dan kami akan dengan senang hati menerimanya dan tentu semakin melengkapi kebahagiaan kami.
+            </p>
+            <div class="gift row aos-init  aos-animate justify-content-center ">
+              <div class="col-sm-5 mb-4 col-10" width="10px">
+                <div class="text-center d-flex">
+                  <div class="masuk rounded-start py-3 px-4" style="background-color: #7b751d;">
+                    <img class="pt-5" style="width:60px ;" src="img/bri.png">
+                      <p class="pt-2 miring" style="font-size: 34px;" >
+                        <strong>BRI</strong>
+                      </p>
+                  </div>
+                  <div class="ubah rounded-end py-4 px-lg-5 px-2" style="background-color:bisque;text-align: justify;" >
+                    <div class="d-flex ps-3">
+                      <h1 class="ps-2" style="font-size: 4em; font-weight: bold;">01</h1>
+                      <p class="pt-2 px-2 fw-bold fs-5">Bank<br>Account</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img class="py-4" src="img/rekening-removebg-preview.png" width="55px" alt="">
+                      <div class="flex-column">
+                        <p class="text-start pt-3 ps-2 m-0"><strong>No Rekening</strong></p>
+                        <blockquote id="myInput" class="text-start ps-2 m-0">003501029216536</blockquote>
+                        <p class="text-start ps-2 m-0"><strong>Atas Nama</strong></p>
+                        <p class="text-start ps-2 m-0">Wisnu Ibnu Muttaqiem</p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row-reverse mb-3">
+                      <a class="btn btn-outline-success" id="k2button" onClick="copyToClipboard()"><img src="img/slin.png" width="30px" alt=""> Salin Rekening</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-5 mb-4 col-10" width="10px">
+                <div class="text-center d-flex">
+                  <div class="rounded-start py-3 px-4" style="background-color: #7b751d;">
+                    <img class="pt-5" style="width:60px ;" src="img/gopay-removebg-preview.png">
+                      <p class="pt-2 miring" style="font-size: 34px;" >
+                        <strong>Gopay</strong>
+                      </p>
+                  </div>
+                  <div class="ubah rounded-end py-4 px-lg-5 px-2" style="background-color:bisque;text-align: justify;" >
+                    <div class="d-flex ps-3">
+                      <h1 class="ps-2" style="font-size: 4em; font-weight: bold;">02</h1>
+                      <p class="pt-2 px-2 fw-bold fs-5">Digital <br>E-Wallet</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <img class="py-4" src="img/rekening-removebg-preview.png" width="55px" alt="">
+                      <div class="flex-column">
+                        <p class="text-start pt-3 ps-2 m-0"><strong>No E-Wallet</strong></p>
+                        <blockquote id="myInput2" class="text-start ps-2 m-0">085893953426</blockquote>
+                        <p class="text-start ps-2 m-0"><strong>Atas Nama</strong></p>
+                        <p class="text-start ps-2 m-0">Wisnu Ibnu Muttaqiem</p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row-reverse mb-3">
+                      <a class="btn btn-outline-success" id="k2button2" onClick="copyToClipboard()"><img src="img/slin.png" width="30px" alt=""> Salin E-Wallet</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="gift row aos-init ms-0aos-animate justify-content-center">
+              <div class="col-10 justify-content-center">
+                <h1 class="mt-5 fs-1 fw-bold" style=" color:#7b751d;" >Konfirmasi Kirim Hadiah
+                </h1>
+                <form
+                class="py-5 px-lg-5 px-0"
+                id="my-form"
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbymXBgCWLpYop8JPSQuoFf4kk9rYbfNavukdQN1nM9qXYPQFt0OGUVR_f2XbHRkTGA4HQ/exec">
+                  <input style="background-color:#7d9d55;" type="text" class="form-control mb-2" id="nama" placeholder="Nama" name="nama">
+                  <textarea style="background-color:#7d9d55;" class="form-control mb-2" id="ucapan" rows="3" placeholder="Jumlah angpao atau bentuk kado" name="ucapan"></textarea>
+                  <select class="form-select mb-2" style="background-color:#7d9d55;"  name="status" aria-label="Default select example">
+                    <option selected disabled>Jenis Hadiah</option>
+                    <option value="Hadir">Transfer BRI</option>
+                    <option value="Tidak Hadir">Transfer E-Wallet</option>
+                    <option value="Tidak Hadir">Pengiriman Kado</option>
+                  </select>
+                  <button class="btn btn-outline-success mt-2 px-3 fs-5" style="background-color: bisque; padding: 10px; border-radius: 9px">Kirim</button>
+                </form>
+              </div>
+              <div class="col-sm-5 mb-4 col-10" width="10px">
+                <div class="text-center d-flex">
+                  <div class="rounded-start px-3" style="background-color: #7b751d;">
+                    <img class="pt-5 mt-5" style="width:60px ;" src="img/rumah.png">
+                      <p class="pt-2 miring text-black" style="font-size: 20px;" >
+                        <strong>Alamat<br>Rumah</strong>
+                      </p>
+                  </div>
+                  <div class="ubah rounded-end py-4 px-lg-3 pe-2 ps-2" style="background-color:bisque;text-align: justify;" >
+                    <div class="d-flex ps-lg-5 ps-2">
+                      <h1 class="" style="font-size: 4em; font-weight: bold;">03</h1>
+                      <p class="pt-2 px-1 fw-bold fs-5">Alamat<br>Rumah</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <div class="flex-column">
+                        <p class="text-start pt-3 ps-2 m-0"><strong>Nama Penerima</strong></p>
+                        <p class="text-start ps-2 m-0">Wisnu Ibnu Muttaqiem</p>
+                        <p class="text-start ps-2 m-0"><strong>Alamat</strong></p>
+                        <blockquote id="myInput3" class="text-start ps-2 m-0">Dukuh Birin RT.001/RW.006 Desa Karanglo, Kecamatan Klaten Selatan, Klaten, Klaten Selatan, Klaten</blockquote>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row-reverse mb-3">
+                      <a class="btn btn-outline-success" id="k2button3" onClick="copyToClipboard()"><img src="img/slin.png" width="30px" alt=""> Salin Alamat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p style=" color:#7b751d;" >Bismillah, semoga dengan niat yang baik dan ikhlas segala sesuatunya berjalan dengan lancar. Kami memohon doa restu dari keluarga, sahabat, rekan-rekan. Mohon doanya semoga ini semua menjadi awal lembaran baru yang indah dan penuh berkah serta menjadikan kami keluarga yang sakinah, mawaddah, dan warahmah, sampai jannah-Nya Allah SWT.</p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gift End -->
+
+    <!--SVG Start  -->
+    <div class="custom-shape-divider-top-1723900219">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="transform: scaleY(-1);">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="#2B4E02"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill" fill="#4B5440"></path>
+    </svg> 
+    </div>
+    <!-- SVG End -->
+
+    <div class="tambah" style="background-color: #4B5440;">
+    <br>
+    </div>
+
+  <!-- Footer Start -->
+   <section style="background-color: #4B5440;" >
+      <div class="container">
+        <div class="row">
+          <div class="text-center" style="color: bisque;">
+            <h1 class="mt-5 fs-1 fw-bold" >Terima Kasih
+            </h1>
+            <p class="my-4">
+                Atas Kehadiran dan Doa Restu nya kami ucapkan terima kasih.
+            </p>
+            <p class="mb-5">Kami yang Berbahagia, <br>
+               Keluarga Besar Kedua Mempelai.
+            </p>
+          </div>
+          <div class="text-center text-white">
+            <h2 class="teks" >Extra Invitation</h2>
+            <a href="https://extrawedding.github.io/extrainvitation/" style="text-decoration: none; color: white;">Digital Wedding Invitation @ 2024</a>
+            <div class="d-flex justify-content-center mb-4 mt-2 gap-2">
+                <a href="https://api.whatsapp.com/send/?phone=6285893953426"><img src="img/images-removebg-preview.png" width="30px" alt="No WA"></a>
+                <a href="https://api.whatsapp.com/send/?phone=6285893953426"><img src="img/website.png" width="35px" alt="No WA"></a>
+                <a href="https://api.whatsapp.com/send/?phone=6285893953426"><img src="img/ig-whtie.png" width="30px" alt="No WA"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+  <!-- Footer End -->
+  
+  
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="song/Y2meta.app - Bruno Mars - Marry You (Official Lyric Video) (128 kbps).mp3" type="audio/mp3">
+      </audio>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+      let newYearDay = new Date(new Date().getFullYear()+ 1, 0, 12);
+
+      let $days = document.getElementById('days');
+      let $hours = document.getElementById('hours');
+      let $minutes = document.getElementById('minutes');
+      let $seconds = document.getElementById('seconds');
+
+      setInterval(function(){
+        var now = new Date();
+        var timetleft = (newYearDay -now )/1000;
+        updateclock(timetleft);
+      }, 1000);
+
+      function updateclock(remainingTime){
+
+        let days = Math.floor(remainingTime / 86400);
+        remainingTime -= days * 86400;
+
+        let hours = Math.floor(remainingTime / 3600) % 24;
+        remainingTime -=  hours * 3600;
+
+        let minutes = Math.floor(remainingTime / 60) % 60;
+        remainingTime -= minutes * 60;
+
+        let seconds = Math.floor(remainingTime % 60);
+
+
+        $days.innerHTML = Number(days);
+        $hours.innerHTML = Number(hours);
+        $minutes.innerHTML = Number(minutes);
+        $seconds.innerHTML = Number(seconds);
+      }
+
+      function Number(number){
+        return number < 10 ? "0" + number : number;
+      }
+
+
+            document.addEventListener("click",function (e){
+        if(e.target.classList.contains("gallery-item")){
+            const src = e.target.getAttribute("src");
+            document.querySelector(".modal-img").src = src;
+            const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+            myModal.show();
+        }
+      })
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      window.addEventListener("load", function() {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          alert("Konfirmasi Kehadiran Berhasil");
+        })
+      });
+    });
+    </script>
+    <script>
+      const rootElement = document.querySelector(":root");
+      function disabledScroll(){
+
+         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+
+         window.onscroll = function(){
+            window.scrollTo(scrollTop, scrollLeft);
+         }
+
+
+         rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll(){
+        window.onscroll = function(){}
+         rootElement.style.scrollBehavior = 'smooth';
+         playAudio();
+      }
+
+      function playAudio(){
+        const song = document.querySelector('#song');
+        song.volume = 0.1;
+        song.play();
+      }
+      disabledScroll();
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n')|| 'Tamu Undangan';
+
+      const namaContainer = document.querySelector('.home h2');
+      namaContainer.innerHTML = nama;
+
+      document.querySelector('#nama').value = nama;
+    </script>
+    <script>
+      function copyFunction(elementId, buttonId) {
+        const copyText = document.getElementById(elementId).textContent;
+        const textArea = document.createElement('textarea');
+        textArea.textContent = copyText;
+        document.body.append(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.getElementById(buttonId).innerText = "Berhasil Disalin";
+        textArea.remove();
+      }
+
+      // Menambahkan event listener untuk tombol pertama (Salin No Rekening)
+      document.querySelector('#k2button').addEventListener('click', function() {
+        copyFunction('myInput', 'k2button');
+      });
+
+      // Menambahkan event listener untuk tombol kedua (Salin No E-Wallet)
+      document.querySelector('#k2button2').addEventListener('click', function() {
+        copyFunction('myInput2', 'k2button2');
+      });
+
+      // Menambahkan event listener untuk tombol kedua (Salin No E-Wallet)
+      document.querySelector('#k2button3').addEventListener('click', function() {
+        copyFunction('myInput3', 'k2button3');
+      });
+
+    </script>
+</body>
+</html>

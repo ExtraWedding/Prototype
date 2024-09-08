@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+@font-face{
+    font-family:'Me Quran';
+    src:url('https://kangismet.github.io/fonts/me_quran.eot');
+    src:url('https://kangismet.github.io/fonts/me_quran.eot?#iefix') format('embedded-opentype'),
+    url('https://kangismet.github.io/fonts/me_quran.ttf') format('truetype');
+    font-weight:400;
+    font-weight:normal;
+    font-display: swap;
+  }
+  
+  .arab{
+    line-height: 48px;
+    font-family: "Me Quran","Traditional Arabic",Tahoma,sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+  }
+
+.bg-full{
+    background-image: url('img/kucing.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.beda a{
+  color: rgb(240, 238, 238);
+  background-color:  #7b751d;
+}
+.beda a:hover{
+  color: #7b751d;
+  background-color: rgb(240, 238, 238);
+}
+.home a{
+  color: #3d5e18;
+  background-color: white;
+}
+.home a:hover{
+  color: white;
+  background-color: #3d5e18;
+}
+
+.event a,.gift a{
+  color:white;
+  background-color:  #7b751d;
+}
+.event a:hover, .gift a:hover{
+  color: #7b751d;
+  background-color:white;
+}
+.ahmad a,.great a{
+  color:#527727;
+  background-color: bisque;
+}
+
+.ahmad a:hover,.great a:hover{
+  color: bisque;
+  background-color:#527727;
+}
+
+.kotak{
+    opacity: 0.77;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textAtas{
+        font-family: "Satisfy", cursive;
+        font-weight: bold;
+        font-style: normal;
+}
+
+.textTengah{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.judul {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.tentangMempelai {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .miring{
+    writing-mode: vertical-rl;
+    text-align: center;
+  }
+
+  .player{
+    aspect-ratio: 16 / 9;
+    width: 100%; 
+  }
+
+  .teks{
+    font-family: "Permanent Marker", cursive;
+    font-style: normal;
+  }
+
+  .live{
+    text-decoration: none;
+    background-color: #527727;
+    color: aliceblue;
+  }
+
+  .rotated-kiri {
+    transform: rotate(+6deg); /* Adjust the degree to match the rotation you want */
+ }
+
+ .rotated-kanan {
+  transform: rotate(-6deg); /* Adjust the degree to match the rotation you want */
+  }
+
+  .gambar {
+    order: -1; /* Memindahkan gambar ke atas */
+}
+
+  .tulisan {
+    order: 1; /* Memastikan teks tetap berada di bawah gambar */
+}
+
+
+.row2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+.column2{
+  grid-column: span 3;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.gift .masuk p{
+  color: rgba(2, 2, 153, 0.934);
+}
+
+img{
+	max-width: 100%;
+}
+.gallery{
+	padding: 50px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+  border-radius: 20px;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor:default;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+@media (max-width: 576px) {
+  .ubah h1 {
+      font-size: 2em; /* Adjust as needed */
+  }
+  .ubah h4 {
+    font-size: 1em; /* Adjust as needed */
+  }
+  .ubah .kecil {
+      font-size: 0.740em; /* Adjust as needed */
+  }
+}
